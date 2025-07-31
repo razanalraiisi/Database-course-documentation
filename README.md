@@ -79,18 +79,18 @@ Common models include object storage for example: AWS S3, Google Cloud Storage, 
 Databases especially relational ones—typically rely on block storage to store data volumes and transaction logs. Cloud storage offers durable, redundant block storage volumes for example: Amazon EBS, Azure managed disks, providing high availability and fault tolerance. Additionally, object storage systems are often used for storing database backups or large unstructured blobs. Leveraging cloud infrastructure, cloud databases abstract away hardware provisioning while storing their data and transaction logs on cloud managed storage tiers.
 
 ##### Advantages of Cloud‑Based Databases
-- Fully managed: Tasks like patching, backups, failover, upgrades, and point-in-time recovery are handled by the provider.
-- Elastic scalability: You can scale compute and storage on demand. Azure and AWS support vertical scaling, Google Spanner provides horizontal scaling across regions.
-- High availability and redundancy: Built in replication, multi-zone/distributed clusters, and failover support. Spanner uses synchronous global replication and strong consistency.
-- Integration and ecosystem: Azure SQL integrates tightly with Microsoft tools and analytics services, AWS and GCP databases blend well with their broader cloud stacks.
-- Cost model: Pay as you go pricing eliminates up front investment in servers. Elastic scaling enables cost efficiency.
-- Advanced features: Azure SQL offers built in AI‑driven tuning and performance optimization. Google Cloud SQL includes AI assistant support for example: SQL generation.
+- **Fully managed:** Tasks like patching, backups, failover, upgrades, and point-in-time recovery are handled by the provider.
+- **Elastic scalability:** You can scale compute and storage on demand. Azure and AWS support vertical scaling, Google Spanner provides horizontal scaling across regions.
+- **High availability and redundancy:** Built in replication, multi-zone/distributed clusters, and failover support. Spanner uses synchronous global replication and strong consistency.
+- **Integration and ecosystem:** Azure SQL integrates tightly with Microsoft tools and analytics services, AWS and GCP databases blend well with their broader cloud stacks.
+- **Cost model:** Pay as you go pricing eliminates up front investment in servers. Elastic scaling enables cost efficiency.
+- **Advanced features:** Azure SQL offers built in AI‑driven tuning and performance optimization. Google Cloud SQL includes AI assistant support for example: SQL generation.
 
-#### Disadvantages of cloud-based databases
-- Vendor lock in: Each service has proprietary features that can make migration complex.
-- Reduced control: You don’t have OS level access or fine grained tuning of the underlying server.
-- Cost at scale: While starting low cost, heavy workloads or globally distributed systems for example: Cloud Spanner can become expensive.
-- Latency and network dependency: Performance depends on network reliability, high latency or intermittent connectivity impacts responsiveness.
-- Learning curve and complexity: Services like Spanner require understanding distributed SQL, TrueTime, and global schema design.
-- Feature limitations: Some platforms lack deep support for semi-structured, unstructured data or very frequent schema changes for example: Spanner.
-- Compliance and security control: Sensitive workloads may have regulatory requirements not fully addressed by standard offerings, requiring extra configuration.
+##### Disadvantages of cloud-based databases
+- **Vendor lock in:** Each service has proprietary features that can make migration complex.
+- **Reduced control:** You don’t have OS level access or fine grained tuning of the underlying server.
+- **Cost at scale:** While starting low cost, heavy workloads or globally distributed systems for example: Cloud Spanner can become expensive.
+- **Latency and network dependency:** Performance depends on network reliability, high latency or intermittent connectivity impacts responsiveness.
+- **Learning curve and complexity:** Services like Spanner require understanding distributed SQL, TrueTime, and global schema design.
+- **Feature limitations:** Some platforms lack deep support for semi-structured, unstructured data or very frequent schema changes for example: Spanner.
+- **Compliance and security control:** Sensitive workloads may have regulatory requirements not fully addressed by standard offerings, requiring extra configuration.
